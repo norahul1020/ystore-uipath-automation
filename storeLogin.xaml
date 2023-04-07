@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StoreLogin" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="850.4,1404.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="43">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="StoreLogin" sap:VirtualizedContainerService.HintSize="496,1340" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Xstore" sap:VirtualizedContainerService.HintSize="433.6,1228" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1e19fd26-53dc-4d00-b21d-46cb2a0ef027" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,936.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'graphic'" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+              <ui:WaitUiElementAppear.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eea765ef-e71b-4ad3-9623-95b18fd3851f" InformativeScreenshot="7b1dad59880251be6e8fa2419f4aaf8d" Selector="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl idx='4' role='graphic' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:WaitUiElementAppear.Target>
+            </ui:WaitUiElementAppear>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Login_Input_Main'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1e19fd26-53dc-4d00-b21d-46cb2a0ef027" Text="109[k(enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="wOjBzOvYMUyhj6QxIZaBBw" DesignTimeRectangle="921, 93, 631, 35" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Login_Input_Main'" FullSelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='Scan or key your employee ID to sign on.' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='Scan or key your employee ID to sign on.' role='editable text' automationid='' /&gt;" Guid="a1bbb272-c590-4e25-a892-96ffd9f94754" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAnsAAAAnCAYAAAB3544yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI/SURBVHhe7dtBThNhGMdhzwNrFiSCK6uwNEZREXCjqQIxrlUoiAMYWm4h7TGsZ6A9Ra/wytdM1doxYdn58jzJb/fO/p/MzJ3lpYWQJElSnhl7kiRJGWfsSZIkZVzl2Ft/cC92372Jz58+Rqt1EEVRSJIkaY5qHR6Mt9ru29ex3lid2XOTZsbe5vPHcXZaxM9+P0ajUQAAMJ/SVuv3f8TpzXZ7sfFoatNNmhp7r7afRbfbLR8HAKAurq6+x87WxtTQS/0ee+nV7WWnXZ4DAFA3nZstt9ZYqR57+3vNGA6H5SkAAHUzGAzGm65y7B21Dn2jBwBQY2nLpU1XOfaK4qQ8AwCgrtKmW15arBp7RXkCAEBdpU032XfGHgBAZow9AICMGXsAABkz9gAAMmbsAQBkzNgDAMiYsQcAkDFjDwAgY8YeAEDGjD0AgIwZewAAGTP2AAAyZuwBAGTM2AMAyJixBwCQMWMPACBjxh4AQMaMPQCAjBl7AAAZ++/Y+3pyXJ4AAFBXadMtLy3Ojr2j1mGMRqPyDACAuklbLm26yb6bGnv7e80YDoflKQAAdXN9fR37u83qsbfeWI1Op12eAgBQN532RTy8f7d67KV2Xj6NXq9XngMAUBe9Xje2N59MDb3U1NhL7WxtxGWnPX6l6xs+AID5lbbaYDCI9sVF5dBLzYy91FpjJT6834uTL8dxfn42/oVXkiRJ89O3m42WtlrabP++uv27yrE33Z9fdyVJkjQv3W6j3WLsSZIkqZ4txC9Z66sDvk84vwAAAABJRU5ErkJggg==" InformativeScreenshot="4ac488026ddbe863f2217359f0db7ef2.png" Reference="SlW_y1f9GEW7qdLNb4pdyw/BzQCTFw8RESJh8USeAMgDw" ScopeSelectorArgument="&lt;wnd app='xstore-electron.exe' cls='Chrome_WidgetWin_1' title='Xstore' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Login_Input'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="1e19fd26-53dc-4d00-b21d-46cb2a0ef027" Text="1" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="5IK0tkvSbEycplBRG9Xv4A" DesignTimeRectangle="645, 333, 630, 35" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'Login_Input'" FullSelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='Key your password to complete sign on.' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='Key your password to complete sign on.' role='editable text' automationid='' /&gt;" Guid="e2f0b89b-35f7-4d84-8ada-517c24a778b1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAnoAAAAnCAYAAACYJeUMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHuSURBVHhe7dtNjqpAGIbRu3tXAA78w6GtQ3GqxD2Isgi3UDcfIR1tXIBUzkmeGGMxf4Pw7/l8JkmSJOWXoSdJkpRphp4kSVKmfRx6bdum3W6XyrJMy+UyzWYzSZIkfVGx0WKr/fz89Nvt06YbDb3L5ZKqqkr3+73/DgDAd4qtFiNvs9mkpmneNl30NvTO53M6nU7DpQAATEVd16Ox9zv0brdb2m63w1EAAKbm9V/Zt6G33+9T13XDMQAApubxePTP7I2GXjzMF58AAExTbLmiKMZDL97cAABg2mLTjYZevKYLAMC0xaYz9AAAMmToAQBkytADAMiUoQcAkClDDwAgU4YeAECmDD0AgEwZegAAmTL0AAAyZegBAGTK0AMAyJShBwCQKUMPACBThh4AQKYMPQCATBl6AACZMvQAADJl6AEAZMrQAwDI1Meht1gshp8BAJiq5XI5HnplWfafAABMU2y5oijGQ2+/36eu64ZjAABMzf1+7zfdaOi1bZuqqhqOAQAwNev1Oj0ej/HQi5qmSXVdD0cBAJiK4/GYrtfr766L3oZeFGMv7uzFrb/4DgDAd4qtFpst7uT9HXnRaOhFccHhcEjz+TytVqv+NV1JkiR9T7HRYqvFZnv9u/a1j0NPkiRJ08/QkyRJyrJn+g+1fSFb972GJQAAAABJRU5ErkJggg==" InformativeScreenshot="28adbc1e16f2c5d92f031cf4811813ed.png" Reference="SlW_y1f9GEW7qdLNb4pdyw/Go-wt8Jk3Uyxf8DAoXv-7Q" ScopeSelectorArgument="&lt;wnd app='xstore-electron.exe' cls='Chrome_WidgetWin_1' title='Xstore' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'OK_Button'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e19fd26-53dc-4d00-b21d-46cb2a0ef027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="m0ZxGokxFEu8ZfIY3tSiJQ" DesignTimeRectangle="1036, 438, 175, 76" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'OK_Button'" FullSelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Xstore' role='document' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:text='OK' /&gt;" Guid="5731e3d9-a180-4867-9bcd-846e4106b8cd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAABQCAYAAABSxETfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQxSURBVHhe7dzfTxxVGIdx/07jlTfESFIuxISEWgxNq1ZCjKS1iWK9sMYLSS9sNSKRYFvaQmhjGzFiLF1+VAVWaEtbocvR9ySzfnf3LGV2NzoveSb5hN2Zc+bqYXIys5kXyuVyAA4DYsah0TTm6Zm5MHz2XDjSfyK8+Eov8L/qOXoy9mhdpno1DTEvlpbC0OnR5AmBIhg683HstL7dhpjfJWQ4YJ3Wt1sT8/jk5eREoIisV+23JuY33nk/OQkoIutV+62Juat3IDkJKKLuvsF0zMsrq8kJQFG99OrrYW1tvTFmk5oAFJn2S8xwTfslZrim/RIzXNN+iRmuab/EDNe0X2KGa9ovMcM17ZeY4Zr2S8xwTfslZrim/RIzXNN+iRmuab/EDNe0X2KGa9ovMcM17ZeY4Zr2S8xwTfslZrim/RIzXNN+iRmuab/E3AZ7b8PcDz+Gh4+2w97eXrDtWaUS1jbK4dK3U+Hlnv6GObfnF+K4765cbzjW++apcG95NZ5rfuHX+L1+DGppv8Tcoo/OfxEjbrZZkItLKw1BNovZxtl4m/fL3RIhH5D2S8wteHvkw7BR3oxRbj14GL78ZrIanx2buXUn7O4+i2Henv+55gqditnmWsCEnJ/2S8wtuHLjZgzPgrZ4U2MufD0Rg37y9GkY/Wysur8+ZgvXlhTNruTYn/ZLzDn1v/Ve+GO9HOMbn7qaHGPsany3tBzDvTp7q7pfY+7uOx7u/LRAyG3Qfok5p5HRT8P24yeRfU6NyUx8fy2GWlq+X933b8w34hKEkNuj/RJzTufHLoa/dnbCxp+b4fjwB8kxmbGL43GpsXL/9+q6OYt5c+tBDHlp9TdCboP2S8w5ZYHmiVnHZjFnm13h7R+kfi4ORvsl5pw6dWW2NfPU9GyoVCrh0fbjeKuvfj6eT/sl5pw6t2a+HgPP1s373RlBc9ovMefUybsZ9t3Wy/bUzzb7y/o5H+2XmFtwoPvMX02EnZ3d595nNtlDGDtn/UMW7E/7JeYWWHzlza0YZSeeABpbM9va2dbQtpbWY2hO+yXmFn3y+YWO/jbDZFdzY5/rj6OR9kvMbej0r+YMdzjy0X6JGa5pv8QM17RfYoZr2i8xwzXtl5jhmvZLzHBN+yVmuKb9EjNc036JGa5pv8QM17RfYoZr2i8xwzXtl5jhmvZLzHBN+yVmuKb9EjNc036JGa5pv8QM17RfYoZr2i8xwzXtl5jhmvZLzHBN+yVmuKb9EjNc036JGa5pv8QM17Tfmph5+yQ86e4bbB6zvTstNQkoosGh081jvjQ+mZwEFJH1qv3WxLy+vhEGTo0kJwJFcuyfVYT1qv3WxGwW75VCV+9A8gRAEXS9diwslpZqujUNMWcuX5sNw2fPhZ6jJ5MnBP5LR/pPxB6nZ+aSvZqmMQPeEDMODWLGIVEOfwMcpJF+jE6KKwAAAABJRU5ErkJggg==" InformativeScreenshot="b7b0f087763cbe309dd5f1762e7a7033.png" Reference="SlW_y1f9GEW7qdLNb4pdyw/NdqfByp6Mk-UU_tzekj_tw" ScopeSelectorArgument="&lt;wnd app='xstore-electron.exe' cls='Chrome_WidgetWin_1' title='Xstore' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1080" ContentHash="bsXwPNxnAEeJXywbiDXuqg" FilePath="C:\\xstore\\windows_64\\electron\\xstore-electron.exe" IconBase64="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" InformativeScreenshot="538ef8f5b9016d050cc4a4a58f80a878.png" Reference="SlW_y1f9GEW7qdLNb4pdyw/roCFWtkI_kGhliMhbBA0uA" Selector="&lt;wnd app='xstore-electron.exe' cls='Chrome_WidgetWin_1' title='Xstore' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
