@@ -40,25 +40,22 @@ jobs:
       ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}
       ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
       ORCH_ACC_NAME: ${{ secrets.UIPATHACCOUNTNAME }}
-    steps: 
-      - name: Check out repository code
-        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        uses: actions/checkout@v2
-      - name: Build Nuget Package
-        shell: pwsh
-        run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
-        # Saving Artifacts
-      - name: Upload UiPath Artifacts
-        uses: actions/upload-artifact@v2
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
         with:
-          name: Artifacts
-          path: |
-           package/*.*
-           scripts/*.ps1
-      - name: Download UiPath Artifacts
-        uses: actions/download-artifact@v2
+          java-version: "8"
+          distribution: adopt
+          cache: 'maven'
+
+      - name: Installing porject dependencies and test
+        run: | 
+          mvn clean test -DtestngName="${{ github.event.inputs.Suite_Name }}"
+          
+      - name: Upload Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
         with:
-          name: Artifacts
-      - name: Publish Nuget Package to DEV
-        shell: pwsh
-        run: ${{ github.workspace }}\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey ${{env.ORCH_USER_KEY}} -account_name ${{env.ORCH_ACC_NAME}}
+          name: Extend_report
+          path: ./report
+          retention-days: 5
